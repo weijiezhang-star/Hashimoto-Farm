@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 @media screen and (max-width: 768px) {
   .row {
@@ -22,6 +23,7 @@
   align-items: center;
   justify-content: center;
   text-align: end;
+  margin: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -48,30 +50,6 @@
   }
 }
 
-.to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 99999;
-  width: 60px;
-  height: 60px;
-  border-radius: 100% 100%;
-  background-color: #57a76b;
-  backdrop-filter: blur(10px);
-  color: white;
-  display: none;
-  font-size: 1.5rem;
-  animation: bounce 1s infinite;
-  transition: all 2s;
-  cursor: pointer;
-}
-
-.display-shown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* reset end */
 
 /* main start */
@@ -87,14 +65,21 @@
   position: relative;
   background: url(../img/index/main/pic--01.jpg) center/cover no-repeat;
   height: 100vh;
-  /* height: calc(100vh - 112px); */
   min-height: 500px;
-  /* transform: translateY(112px); */
 }
+
 @media screen and (max-width: 768px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
   .top-main {
-    background: url(../img/index/main/pic--01.jpg) center bottom/cover no-repeat;
-    height: calc(100vh - 189px);
+    background: url(../img/index/main/pic--01-sp.jpg) center/cover no-repeat;
+  }
+  .top-hero__scroll__inner {
+    display: none;
   }
 }
 
@@ -103,7 +88,7 @@
   position: absolute;
   bottom: 3rem;
   right: 5rem;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .top-hero__scroll__circle {
@@ -129,18 +114,6 @@
   width: 18px;
   transform: translate(-50%, -50%);
   animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translate(-50%, -75%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translate(-50%, -50%);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
 }
 
 .top-menu {
@@ -192,6 +165,7 @@
     height: 262px;
     left: 0px;
     bottom: 0px;
+    z-index: 2;
   }
   .top-menu__list {
     display: none;
@@ -213,6 +187,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+  .section-main-title {
+    font-size: 1.8rem;
+  }
+}
+
 .top-message__title {
   position: absolute;
   width: 72px;
@@ -229,15 +209,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .top-message {
-    padding-top: 195px;
-    padding-bottom: 123px;
-  }
   .top-message .section-title__jp {
     font-size: 1.25rem;
   }
   .top-message .section-title {
-    margin-bottom: 163px;
+    margin-bottom: 50px;
   }
   .top-message__title {
     right: 45px;
@@ -247,8 +223,6 @@
 }
 
 .top-making {
-  /* background: var(--bg-primary) url(../img/index/making/bgi--line.svg) top
-    center/auto 75px repeat-x; */
   background-color: var(--bg-primary);
   padding: 40px 0 60px;
   position: relative;
@@ -262,144 +236,6 @@
   box-sizing: border-box;
   width: 50%;
   height: 550px;
-}
-
-.slideshow {
-  position: relative;
-  list-style: none;
-  z-index: 1;
-  width: 500px;
-  height: 450px;
-}
-
-@media screen and (max-width: 768px) {
-  .slideshow {
-    width: 100%;
-    height: 450px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .slideshow {
-    width: 100%;
-    height: 340px;
-  }
-}
-
-.slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: transparent;
-  opacity: 0;
-  z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-animation: imageAnimation 12s linear infinite 0s;
-  -moz-animation: imageAnimation 12s linear infinite 0s;
-  animation: imageAnimation 12s linear infinite 0s;
-}
-
-.slideshow li span img {
-  border-radius: 10%;
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 425px) {
-  .slideshow li span img {
-    border-radius: 10%;
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-  }
-}
-
-.slideshow li:nth-child(1) span {
-  color: #fff;
-}
-
-.slideshow li:nth-child(2) span {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s;
-  color: #fff;
-}
-
-.slideshow li:nth-child(3) span {
-  -webkit-animation-delay: 8s;
-  -moz-animation-delay: 8s;
-  animation-delay: 8s;
-  color: #fff;
-}
-
-@-webkit-keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -moz-animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -moz-animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  12.5% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.no-cssanimations .slideshow li span {
-  opacity: 1;
 }
 
 .top-making__image-sp {
@@ -431,8 +267,6 @@
 
 @media screen and (max-width: 768px) {
   .top-making {
-    padding-top: 167px;
-    padding-bottom: 30px;
     background-size: auto 67px;
     display: flex;
     flex-direction: column;
@@ -541,9 +375,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .top-shopping {
-    padding-bottom: 30px;
-  }
   .top-shopping__title {
     width: 137px;
     height: 116px;
@@ -558,8 +389,8 @@
 .top-instagram {
   background: url(../img/index/about/bgi--01.svg) center top 25px/450px auto
     repeat-x;
-  padding-top: 70px;
-  padding-bottom: 110px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   text-align: center;
 }
 .top-instagram__inner {
@@ -594,8 +425,6 @@
 @media screen and (max-width: 768px) {
   .top-instagram {
     background-size: auto 100%;
-    padding-top: 54px;
-    padding-bottom: 50px;
   }
   .top-instagram .section-title__jp {
     font-size: 3.125rem;
