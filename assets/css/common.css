@@ -126,21 +126,6 @@ li {
   margin: auto;
 }
 
-.btn {
-  font-size: 1.0625rem;
-  letter-spacing: 0.13em;
-  border-bottom: 1px dashed var(--color);
-  padding-bottom: 8.5px;
-  position: relative;
-  padding-right: 35px;
-}
-.btn::after {
-  content: url(../img/common/btn/ico-btn-arrow-primary.svg);
-  position: absolute;
-  right: 3px;
-  top: 0px;
-}
-
 .btn-outline {
   position: relative;
   margin-top: 30px;
@@ -305,6 +290,10 @@ li {
   margin-bottom: 60px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .mb-lg {
     margin-bottom: 40px;
@@ -343,11 +332,11 @@ li {
   margin-bottom: 20px;
 }
 
-.u-br-sp {
+.br-sp {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .u-br-sp {
+  .br-sp {
     display: block;
   }
 }
@@ -366,7 +355,7 @@ li {
   .top-gallery,
   .top-making,
   .top-instagram,
-  .top-instagram__inner {
+  .top-instagram-inner {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
   }
@@ -377,7 +366,7 @@ li {
   .top-message,
   .top-making,
   .top-instagram,
-  .top-instagram__inner {
+  .top-instagram-inner {
     padding-left: calc(50vw - 595px);
     padding-right: calc(50vw - 595px);
   }
@@ -665,6 +654,8 @@ header {
   white-space: nowrap;
   padding: 16px;
   cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .menu-list > ul > li > a > img {
@@ -798,7 +789,7 @@ header {
   margin-bottom: 45px;
 }
 
-.section-title__jp {
+.section-subtitle2 {
   font-size: 1.625rem;
   color: var(--color);
   font-weight: bold;
@@ -806,7 +797,7 @@ header {
   line-height: 1.54;
 }
 
-.section-title__en {
+.section-subtitle1 {
   font-family: "futura-pt", sans-serif;
   font-size: 1rem;
   color: var(--color);
@@ -821,7 +812,7 @@ header {
   writing-mode: vertical-rl;
 }
 
-.section-title.font-rl .section-title__en {
+.section-title.font-rl .section-subtitle1 {
   margin-left: 24px;
 }
 
@@ -829,13 +820,13 @@ header {
   .section-title {
     margin-bottom: 20px;
   }
-  .section-title__jp {
+  .section-subtitle2 {
     font-size: 1.4rem;
   }
-  .section-title__en {
+  .section-subtitle1 {
     margin-bottom: 10px;
   }
-  .section-title.font-rl .section-title__en {
+  .section-title.font-rl .section-subtitle1 {
     margin-left: 10px;
   }
 }
