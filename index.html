@@ -3,87 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <title>橋本農場｜新潟の美味しい米と野菜－無農薬を目指して</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <link rel="icon" type="image/icon" href="favicon.ico" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="assets/js/jquery.easing.js"></script>
-    <script src="assets/js/jquery.smoothScroll.js"></script>
-    <script src="assets/js/common.js"></script>
-    <link rel="stylesheet" href="oru5dte.css" />
-
-    <script type="text/javascript">
-      var ua = navigator.userAgent;
-      if (
-        ua.indexOf("iPad") > 0 ||
-        (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") < 0)
-      ) {
-        document.write(
-          '<meta name="viewport" content="width=1200,user-scalable=no">'
-        );
-      }
-    </script>
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/top.css" />
     <link rel="stylesheet" href="assets/js/slick-1.6.0/slick.css" />
     <link rel="stylesheet" href="assets/js/slick-1.6.0/slick-theme.css" />
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/js/slick-1.6.0/slick.min.js"></script>
-    <link
-      rel="stylesheet"
-      id="sbi_styles-css"
-      href="manage/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2.1"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="wp-block-library-css"
-      href="manage/wp-includes/css/dist/block-library/style.min.css?ver=6.3"
-      type="text/css"
-      media="all"
-    />
-    <script type="text/javascript">
-      $(function () {
-        $("#top-instagram").load("/include/top-instagram.php");
-        if ($(window).width() < 599) {
-          var screenHeight = window.innerHeight;
-          $(document).ready(function () {
-            var hSize = $(window).height();
-            $(".top-main").height(hSize - 189);
-          });
-          $(window).resize(function () {
-            var hSize = $(window).height();
-            $(".top-main").height(hSize - 189);
-          });
-        }
-      });
-    </script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.smoothScroll.js"></script>
+    <script src="assets/js/common.js"></script>
   </head>
 
   <body class="top">
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-W9XWR8B"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <a id="pagetop"></a>
+    <div id="pagetop"></div>
     <span class="to-top"> &#8679; </span>
     <header>
       <nav class="container">
         <div class="navbar">
           <div class="nav-logo">
-            <a href="./index.html"> 橋本農場 </a>
+            <a href="./index.html">
+              <img
+                src="./assets/img/common/header/logo.svg"
+                width="120"
+                alt="logo"
+              />
+            </a>
           </div>
           <div class="menu-list">
             <ul>
@@ -103,7 +56,7 @@
                 <a href="./contact/index.html">お問い合わせ</a>
               </li>
               <li>
-                <a href="./contact/index.html" class="btn-shopping">
+                <a href="./contact/index.html" class="btn-outline">
                   <span>
                     <span> お問い合わせ </span>
                     <span></span>
@@ -158,20 +111,9 @@
             ></path>
           </svg>
         </div>
-        <div class="top-menu">
-          <ul class="top-menu__list">
-            <li><a href="./contact/index.html">お問い合わせ</a></li>
-            <li><a href="voice/index.html">インスタ（ニュースなど）</a></li>
-            <li><a href="#shopping">お届けする商品</a></li>
-            <li><a href="#about">橋本農場</a></li>
-            <li><a href="#making">お米を作る工程</a></li>
-            <li><a href="#message">私たちの想い</a></li>
-          </ul>
-        </div>
       </section>
       <section class="top-message" id="message">
         <div class="container">
-          <!-- <h2 class="top-message__title">私たちの想い</h2> -->
           <h2 class="section-main-title">私たちの想い</h2>
           <div class="section-title font-rl">
             <p class="section-title__en">OUR MESSAGE</p>
@@ -842,89 +784,82 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <section class="footer-contact">
+    <footer>
+      <div class="footer-content">
         <div class="container">
-          <h2 class="section-main-title">お問い合わせ</h2>
-          <div class="row">
-            <div class="col">
-              <h3 class="section-title__en">SNS ACCOUNT</h3>
-              <p class="font-large font-bold text-left">
-                日々の我が家のお米づくりを発信しています。
-              </p>
-              <ul class="footer-sns-list">
-                <li>
-                  <a
-                    href="https://www.instagram.com/hashimoto.farming/"
-                    target="_blank"
-                    ><img
-                      src="assets/img/common/footer/sns/ico--instagram.svg"
-                      alt="instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/hashimoto.farming"
-                    target="_blank"
-                    ><img
-                      src="assets/img/common/footer/sns/ico--fb.svg"
-                      alt="facebook"
-                  /></a>
-                </li>
-              </ul>
+          <section class="footer-contact">
+            <div class="contact-logo">
+              <img src="./assets/img/common/header/logo-white.svg" alt="logo" />
             </div>
-            <div class="col">
-              <h3 class="section-title__en">CONTACT</h3>
-              <a href="tel:025-523-7139" class="footer-contact__tel"
-                >025-523-7139</a
-              >
-              <p class="mb-mainfont-bold">受付時間：10:00〜18:00(不定休)</p>
-              <p class="footer-contact__address font-bold">
+            <div class="contact-content">
+              <p>(有) 橋本農場</p>
+              <p>
                 〒943-0186 <br class="u-br-sp" />新潟県上越市大字市野江353番地1
               </p>
-              <a href="./contact/index.html" class="btn-shopping mb-sm">
+              <p>025-523-7139</p>
+              <a href="./contact/index.html" class="btn-outline mb-sm">
                 <span>
                   <span> お問い合わせはこちら </span>
                   <span></span>
                 </span>
               </a>
-              <div class="text-center">
-                <a href=""><u>プライバシーポリシー</u></a>
-              </div>
             </div>
-          </div>
+          </section>
+          <section class="menu-list">
+            <ul>
+              <li>
+                <a href="./index.html">ホーム</a>
+              </li>
+              <li>
+                <a href="./about/index.html">橋本農場</a>
+              </li>
+              <li>
+                <a href="#top-making">お米を作る工程</a>
+              </li>
+              <li>
+                <a href="./shopping/index.html">お届けする商品</a>
+              </li>
+              <li>
+                <a href="./contact/index.html">お問い合わせ</a>
+              </li>
+              <li>
+                <a href="./contact/index.html" class="btn-outline">
+                  <span>
+                    <span> お問い合わせ </span>
+                    <span></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-sns-section">
+            <ul class="footer-sns-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/hashimoto.farming/"
+                  target="_blank"
+                  ><img
+                    src="assets/img/common/footer/sns/icon-instagram-white.png"
+                    width="30"
+                    alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/hashimoto.farming"
+                  target="_blank"
+                  ><img
+                    src="assets/img/common/footer/sns/icon-fb-white.png"
+                    width="30"
+                    alt="facebook"
+                /></a>
+              </li>
+            </ul>
+          </section>
+          <section class="copyright">
+            <small>©2024 HASHIMOTO farming</small>
+          </section>
         </div>
-      </section>
-      <section class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-row">
-            <div>
-              <img src="./assets/img/common/header/logo.png" alt="logo" />
-            </div>
-            <div class="menu-list">
-              <ul>
-                <li>
-                  <a href="./index.html">ホーム</a>
-                </li>
-                <li>
-                  <a href="./about/index.html">橋本農場</a>
-                </li>
-                <li>
-                  <a href="#top-making">お米を作る工程</a>
-                </li>
-                <li>
-                  <a href="./shopping/index.html">お届けする商品</a>
-                </li>
-                <li>
-                  <a href="./shopping/index.html">お問い合わせ</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="copy">
-        <small>&copy; 2024 HASHIMOTO farming</small>
       </div>
     </footer>
   </body>

@@ -116,81 +116,11 @@
   animation: bounce 1s infinite;
 }
 
-.top-menu {
-  position: absolute;
-  left: 14px;
-  bottom: -47px;
-  background: url(../img/index/main/bgi--menu.svg) center/contain no-repeat;
-  width: 580px;
-  height: 375px;
-  z-index: 2;
-}
-.top-menu__list {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.top-menu__list li {
-  position: relative;
-  padding-top: 30px;
-  margin: 0px 17.5px;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  font-weight: bold;
-  vertical-align: top;
-  line-height: 1;
-}
-.top-menu__list li::before {
-  content: "ー";
-  position: absolute;
-  top: 0;
-  left: 0px;
-  font-weight: normal;
-}
-@media screen and (max-width: 768px) {
-  .top-menu {
-    background: url(../img/index/main/bgi--menu-sp.svg) center/contain no-repeat;
-    width: 272px;
-    height: 262px;
-    left: 0px;
-    bottom: 0px;
-    z-index: 2;
-  }
-  .top-menu__list {
-    display: none;
-  }
-}
-
 .top-message {
   background: url(../img/index/about/bgi--01.svg) center top 35px/550px auto
     repeat-x;
   position: relative;
   padding: 40px 0 60px;
-}
-
-.section-main-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--primary);
-  display: inline-block;
-  width: 100%;
-}
-
-@media screen and (max-width: 425px) {
-  .section-main-title {
-    font-size: 1.8rem;
-  }
 }
 
 .top-message__title {
@@ -391,6 +321,7 @@
     repeat-x;
   padding-top: 40px;
   padding-bottom: 60px;
+  margin-bottom: 113px;
   text-align: center;
 }
 .top-instagram__inner {
