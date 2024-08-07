@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="assets/css/top.css" />
     <link rel="stylesheet" href="assets/js/slick-1.6.0/slick.css" />
     <link rel="stylesheet" href="assets/js/slick-1.6.0/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/js/slick-1.6.0/slick.min.js"></script>
     <script src="assets/js/jquery.easing.js"></script>
@@ -74,9 +79,26 @@
       </nav>
     </header>
 
-    <main role="main">
+    <main>
       <section class="top-main-wrapper" id="top">
-        <div class="top-main"></div>
+        <!-- <div class="top-main"></div> -->
+        <ul class="top-main-slideshow">
+          <li>
+            <span>
+              <img src="./assets/img/index/main/pic--01.jpg" alt="苗1" />
+            </span>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/img/index/main/pic--02.jpg" alt="苗2" />
+            </span>
+          </li>
+          <li>
+            <span>
+              <img src="./assets/img/index/main/pic--012.jpg" alt="苗3" />
+            </span>
+          </li>
+        </ul>
         <div class="top-hero-scroll">
           <svg
             role="img"
@@ -112,16 +134,37 @@
           </svg>
         </div>
       </section>
+
       <section class="top-message" id="message">
         <div class="container">
-          <h2 class="section-main-title animation">私たちの想い</h2>
-          <div class="section-title font-rl animation">
+          <h2 class="section-main-title">私たちの想い</h2>
+          <div class="section-title animation">
             <p class="section-subtitle1">OUR MESSAGE</p>
             <p class="section-subtitle2">
               ちゃんと美味しいお米を<br />皆さまに
             </p>
           </div>
-          <div class="text-center">
+          <div class="gridthree-row animation">
+            <div class="gridthree-col">
+              <img
+                src="./assets/img/index/message/message-bg01.jpg"
+                alt="message-bg01"
+              />
+            </div>
+            <div class="gridthree-col">
+              <img
+                src="./assets/img/index/message/message-bg02.jpg"
+                alt="message-bg02"
+              />
+            </div>
+            <div class="gridthree-col">
+              <img
+                src="./assets/img/index/message/message-bg03.jpg"
+                alt="message-bg03"
+              />
+            </div>
+          </div>
+          <div class="text-center animation">
             <a href="message/index.html" class="btn-outline m-auto">
               <span>
                 <span>私たちの想いへ</span>
@@ -134,7 +177,7 @@
 
       <section id="top-making" class="top-making" id="making">
         <div class="container">
-          <h2 class="section-main-title animation">お米を作る工程</h2>
+          <h2 class="section-main-title">お米を作る工程</h2>
           <div class="row">
             <div class="top-making-content">
               <div class="section-title">
@@ -715,7 +758,7 @@
 
       <section class="top-about" id="about">
         <div class="container">
-          <h2 class="section-main-title animation">橋本農場</h2>
+          <h2 class="section-main-title">橋本農場</h2>
           <div class="top-about-content">
             <div class="gridhalf-row">
               <div class="gridhalf-col animation">
@@ -731,7 +774,7 @@
                   広大な土地を活用するために野菜の栽培などにもチャレンジをしております。
                   美味しいお米作りや働きやすい環境づくりにいそしんでおります。
                 </p>
-                <div class="text-center">
+                <div class="text-center animation">
                   <a href="about/index.html" class="btn-outline">
                     <span>
                       <span>もっと見る</span>
@@ -742,8 +785,8 @@
               </div>
               <div class="gridhalf-col animation">
                 <img
-                  src="./assets/img/index/making/pic--011.png"
-                  alt="pic--011"
+                  src="./assets/img/index/about/about-bg01.jpg"
+                  alt="about-bg01"
                 />
               </div>
             </div>
@@ -753,7 +796,7 @@
 
       <section class="top-shop" id="shopping">
         <div class="container">
-          <h2 class="section-main-title animation">お届けする商品</h2>
+          <h2 class="section-main-title">お届けする商品</h2>
           <div class="top-shop-list mb-lg animation">
             <img
               src="assets/img/index/shopping/pic--01.png"
@@ -772,7 +815,7 @@
               alt="５Kgいかにもできます"
             />
           </div>
-          <div class="text-center">
+          <div class="text-center animation">
             <a href="shopping/index.html" class="btn-outline m-auto">
               <span>
                 <span>もっと見る</span>
@@ -785,10 +828,10 @@
 
       <section class="top-instagram">
         <div class="container">
-          <h2 class="section-main-title animation">インスタ（ニュースなど）</h2>
+          <h2 class="section-main-title">インスタ（ニュースなど）</h2>
           <div class="top-instagram-inner">
             <div id="top-instagram"></div>
-            <div class="text-center">
+            <div class="text-center animation">
               <a
                 href="https://www.instagram.com/hashimoto.farming/"
                 class="btn-outline m-auto"

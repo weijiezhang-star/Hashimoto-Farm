@@ -654,6 +654,8 @@ header {
   white-space: nowrap;
   padding: 16px;
   cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .menu-list > ul > li > a > img {
