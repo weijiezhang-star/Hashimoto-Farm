@@ -2,21 +2,10 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-W9XWR8B");
-    </script>
     <title>
-      こんなお届けできます｜お米の通販農家直送のお取り寄せ｜久保さんちのお米
+      お届けする商品｜ちゃんと美味しいお米を皆さまに｜橋本農場のお米
     </title>
+    <link rel="icon" type="image/icon" href="../favicon.ico" />
     <meta
       name="keywords"
       content="米,取り寄せ,おいしいお米,無農薬,定期便,お届け方法"
@@ -25,137 +14,280 @@
       name="description"
       content="九州大分県宇佐市の農家直送「久保さんちのお米」ニーズにあった形で、様々な量でお届けすることができます。"
     />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
-    <script src="../assets/js/jquery-1.11.1.min.js"></script>
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
     />
-    <script src="../assets/js/jquery.easing.js"></script>
-    <script src="../assets/js/jquery.smoothScroll.js"></script>
-    <script src="../assets/js/common.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../oru5dte.css" />
-    <script type="text/javascript">
-      var ua = navigator.userAgent;
-      if (
-        ua.indexOf("iPad") > 0 ||
-        (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") < 0)
-      ) {
-        // タブレット
-        document.write(
-          '<meta name="viewport" content="width=1200,user-scalable=no">'
-        );
-      }
-    </script>
+    <link rel="stylesheet" href="../assets/css/common.css" />
     <link rel="stylesheet" href="../assets/css/page.css" />
+    <link rel="stylesheet" href="../assets/js/slick-1.6.0/slick.css" />
+    <link rel="stylesheet" href="../assets/js/slick-1.6.0/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="../assets/js/slick-1.6.0/slick.min.js"></script>
+    <script src="../assets/js/jquery.easing.js"></script>
+    <script src="../assets/js/jquery.smoothScroll.js"></script>
+    <script src="../assets/js/common.js"></script>
   </head>
 
-  <body class="">
+  <body>
     <div id="pagetop"></div>
-    <main role="main" class="">
-      <section class="container page-shopping">
-        <div class="catch">
-          <div class="catch__en">shopping</div>
-          <h1 class="catch__jp">こんなお届けできます</h1>
-        </div>
-        <div class="page-shopping__list">
-          <section>
-            <div class="list-img">
+    <span class="to-top"> &#8679; </span>
+    <header class="page-header">
+      <nav class="container">
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href="./index.html">
               <img
-                src="../assets/img/shopping/list/pic--01.png"
-                alt=""
-                class="animation-pic pic01 animation"
+                src="../assets/img/common/header/logo.svg"
+                width="120"
+                alt="logo"
               />
-            </div>
-            <div class="section-title">
-              <h2 class="section-subtitle2">
-                保冷庫にて<br class="br-sp" />温度管理しております。
-              </h2>
-            </div>
+            </a>
+          </div>
+          <div class="menu-list">
+            <ul>
+              <li>
+                <a href="../index.html">ホーム</a>
+              </li>
+              <li>
+                <a href="../message/index.html">私たちの想い</a>
+              </li>
+              <li>
+                <a href="../about/index.html">橋本農場</a>
+              </li>
+              <li>
+                <a href="../index.html#top-making">お米を作る工程</a>
+              </li>
+              <li>
+                <a href="../shopping/index.html">お届けする商品</a>
+              </li>
+              <li>
+                <a href="../contact/index.html">お問い合わせ</a>
+              </li>
+              <li>
+                <a href="../contact/index.html" class="btn-outline">
+                  <span>
+                    <span> お問い合わせ </span>
+                    <span></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="ham-btn">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="shop-page">
+      <section class="page-main">
+        <div class="container">
+          <div class="page-main-titles">
+            <div class="page-main-en">SHOPPING</div>
+            <h1 class="page-main-jp">お届けする商品</h1>
+          </div>
+          <div class="bgoverlay shop-bgoverlay"></div>
+        </div>
+      </section>
+      <section class="shop-production page-section animation">
+        <div class="container">
+          <div class="section-content">
             <p>
               橋本農場ではお米がおいしく食べられるように、保冷庫にて温度管理しております。
+            </p>
+            <p>
               収穫の秋から春は日陰かつ涼しい場所で問題ありませんが、3月～９月は保冷庫が必須になります。
             </p>
-          </section>
-          <section>
-            <div class="list-img">
+          </div>
+          <div class="shop-row animation">
+            <div class="shop-col">
               <img
-                src="../assets/img/shopping/list/pic--02.png"
-                alt=""
-                class="animation-pic pic01 animation"
+                src="../assets/img/shopping/production/shop-prod01.jpg"
+                alt="message-bg03"
               />
             </div>
-            <div class="section-title">
-              <h2 class="section-subtitle2">真空パックや定期便</h2>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/production/shop-prod02.jpeg"
+                alt="message-bg02"
+              />
             </div>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/production/shop-prod03.jpg"
+                alt="message-bg01"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-quality page-section animation">
+        <div class="container">
+          <div class="section-content">
             <p>
               精米前の30kgは少しずつ、必要な分だけ精米することで鮮度を保ちおいしく食べられますが家庭や近所に精米機がない方が多数かと思います。
-              そんな方のために真空パックや定期便をご用意しております。
             </p>
-          </section>
-          <section>
-            <div class="list-img">
+            <p>そんな方のために真空パックや定期便をご用意しております。</p>
+          </div>
+          <div class="shop-row animation">
+            <div class="shop-col">
               <img
-                src="../assets/img/shopping/list/pic--03.png"
-                alt=""
-                class="animation-pic pic01 animation"
+                src="../assets/img/shopping/quality/shop-quality01.jpeg"
+                alt="message-bg03"
               />
             </div>
-            <div class="section-title">
-              <h2 class="section-subtitle2">
-                300g(2合)から1kg、2kg、5kg<br
-                  class="br-sp"
-                />と細かく対応可能です。
-              </h2>
-            </div>
-            <p>
-              定期便のお客様の中に、まだ前回届いたお米が残っているという方がいらっしゃいました。そういう方には、5kgあたり＋300円で真空パック便を選べます。真空パックは鮮度が落ちにくく、保管する環境に左右されにくい、お米の届け方です。
-            </p>
-          </section>
-          <section>
-            <div class="list-img">
+            <div class="shop-col">
               <img
-                src="../assets/img/shopping/list/pic--04.png"
-                alt=""
-                class="animation-pic pic01 animation"
+                src="../assets/img/shopping/quality/shop-quality02.jpeg"
+                alt="message-bg02"
               />
             </div>
-            <div class="section-title">
-              <h2 class="section-subtitle2">
-                ふるさと納税にも<br class="br-sp" />出品しております。
-              </h2>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/quality/shop-quality04.jpeg"
+                alt="message-bg01"
+              />
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-packing page-section animation">
+        <div class="container">
+          <div class="section-content">
+            <p>300g(2合)から1kg、2kg、5kgと細かく対応可能です。</p>
+            <p>真空パックは300g単位、5kg単位の2種類</p>
+            <p>通常包装は1kg単位で可能です。</p>
+          </div>
+          <div class="shop-row animation">
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/packing/shop-packing01.jpeg"
+                alt="message-bg03"
+              />
+            </div>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/packing/shop-packing02.jpeg"
+                alt="message-bg02"
+              />
+            </div>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/packing/shop-packing03.jpeg"
+                alt="message-bg01"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-explusion page-section animation">
+        <div class="container">
+          <div class="section-content">
             <p>
               ご注文頂いてから精米し、余熱をとるために半日日陰で保管、翌日に発送となります。
+            </p>
+            <p>
               ふるさと納税にも出品しておりますので、ぜひともお手にとってみて下さい。
             </p>
-          </section>
+          </div>
+          <div class="shop-row animation">
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/explusion/shop-explusion01.jpeg"
+                alt="message-bg03"
+              />
+            </div>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/explusion/shop-explusion02.png"
+                alt="message-bg02"
+              />
+            </div>
+            <div class="shop-col">
+              <img
+                src="../assets/img/shopping/explusion/shop-explusion03.jpeg"
+                alt="message-bg01"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
-
-    <!-- InstanceEndEditable --><!-- #BeginLibraryItem "/Library/footer.lbi" -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-contact row">
-          <div class="col">
-            <h2 class="section-subtitle1">SNS ACCOUNT</h2>
-            <p class="font-large font-bold">
-              日々の我が家のお米づくりを<br class="br-sp" />発信しています。
-            </p>
+    <footer>
+      <div class="footer-content">
+        <div class="container">
+          <section class="footer-contact">
+            <div class="contact-logo">
+              <img
+                src="../assets/img/common/header/logo-white.svg"
+                alt="logo"
+              />
+            </div>
+            <div class="contact-content">
+              <p>(有) 橋本農場</p>
+              <p>
+                〒943-0186 <br class="br-sp" />新潟県上越市大字市野江353番地1
+              </p>
+              <p>025-523-7139</p>
+              <a href="./contact/index.html" class="btn-outline mb-sm">
+                <span>
+                  <span> お問い合わせはこちら </span>
+                  <span></span>
+                </span>
+              </a>
+            </div>
+          </section>
+          <section class="menu-list">
+            <ul>
+              <li>
+                <a href="../index.html">ホーム</a>
+              </li>
+              <li>
+                <a href="../message/index.html">私たちの想い</a>
+              </li>
+              <li>
+                <a href="../about/index.html">橋本農場</a>
+              </li>
+              <li>
+                <a href="../index.html#top-making">お米を作る工程</a>
+              </li>
+              <li>
+                <a href="../shopping/index.html">お届けする商品</a>
+              </li>
+              <li>
+                <a href="../contact/index.html">お問い合わせ</a>
+              </li>
+              <li>
+                <a href="../contact/index.html" class="btn-outline">
+                  <span>
+                    <span> お問い合わせ </span>
+                    <span></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-sns-section">
             <ul class="footer-sns-list">
               <li>
                 <a
                   href="https://www.instagram.com/hashimoto.farming/"
                   target="_blank"
                   ><img
-                    src="../assets/img/common/footer/sns/ico--instagram.svg"
+                    src="../assets/img/common/footer/sns/icon-instagram-white.png"
+                    width="30"
                     alt="instagram"
                 /></a>
               </li>
@@ -164,42 +296,18 @@
                   href="https://www.facebook.com/hashimoto.farming"
                   target="_blank"
                   ><img
-                    src="../assets/img/common/footer/sns/ico--fb.svg"
+                    src="../assets/img/common/footer/sns/icon-fb-white.png"
+                    width="30"
                     alt="facebook"
                 /></a>
               </li>
             </ul>
-          </div>
-          <div class="col">
-            <h2 class="section-subtitle1">CONTACT</h2>
-            <a href="tel:025-523-7139" class="footer-contact__tel"
-              >025-523-7139</a
-            >
-            <p class="mb-mainfont-bold">受付時間：10:00〜18:00(不定休)</p>
-            <p class="footer-contact__address font-bold">
-              〒943-0186 <br class="br-sp" />新潟県上越市大字市野江353番地1
-            </p>
-            <a href="" class="btn-outline mb-sm"
-              >お問い合わせはこちら<img
-                src="../assets/img/common/btn/ico-btn-arrow-primary.svg"
-                alt=""
-            /></a>
-            <div class="text-center">
-              <a href=""><u>プライバシーポリシー</u></a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <img
-            src="../assets/img/common/footer/log--sitename.png"
-            alt="久保さんちのお米"
-            class="footer-logo"
-          />
-          <small class="copy">&copy; 2024 HASHIMOTO farming</small>
+          </section>
+          <section class="copyright">
+            <small>©2024 HASHIMOTO farming</small>
+          </section>
         </div>
       </div>
     </footer>
-    <!-- #EndLibraryItem -->
   </body>
-  <!-- InstanceEnd -->
 </html>
